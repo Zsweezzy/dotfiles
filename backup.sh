@@ -1,11 +1,15 @@
 #!/usr/bin/env bash
 # backup.sh — sync theme dotfiles into this repo, then commit & push.
-# Mirrors your home-directory layout (e.g. ~/.config/kitty -> .config/kitty).
-# Run me after you tweak any theme; safe to run repeatedly.
+# Every theme lives in its own folder at the repo root, mirroring your
+# home-directory layout (e.g. ~/.config/kitty -> bwzs/.config/kitty).
+# Usage: ./backup.sh [theme]   (defaults to "bwzs"; e.g. ./backup.sh nord)
+# Run me after you tweak a theme; safe to run repeatedly.
 set -euo pipefail
 
 REPO="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 cd "$REPO"
+
+THEME="${1:-bwzs}"
 
 # "source path|repo-relative destination"
 PAIRS=(
@@ -32,7 +36,7 @@ PAIRS=(
 
 for pair in "${PAIRS[@]}"; do
   src="${pair%%|*}"
-  dst="${pair#*|}"
+  dst="$THEME/${pair#*|}"
   if [[ ! -e "$src" ]]; then
     echo "skip: $src (doesn't exist)"
     continue

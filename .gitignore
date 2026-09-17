@@ -1,4 +1,5 @@
-# Spicetify generated/binaries (regenerate with `spicetify apply`; token files live here)
+# Spicetify generated/binaries (regenerate with `spicetify apply`; token files live here).
+# Patterns apply under every theme folder (bwzs/, nord/, ...).
 .spicetify/spicetify
 .spicetify/globals.d.ts
 .spicetify/css-map.json
