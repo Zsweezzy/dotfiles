@@ -1,0 +1,22 @@
+{
+    "KPackageStructure": "Plasma/Applet",
+    "KPlugin": {
+        "Authors": [
+            {
+                "Name": "User",
+                "Email": "user@localhost"
+            }
+        ],
+        "Category": "Application Launchers",
+        "Description": "A start menu that opens centered on screen",
+        "Icon": "start-here-kde",
+        "Id": "com.github.centeredstart",
+        "License": "GPL-3.0",
+        "Name": "Centered Start Menu",
+        "Website": "https://kde.org"
+    },
+    "X-Plasma-API-Minimum-Version": "6.0",
+    "X-Plasma-Provides": [
+        "org.kde.plasma.launchermenu"
+    ]
+}
