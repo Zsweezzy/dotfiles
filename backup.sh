@@ -43,6 +43,10 @@ for pair in "${PAIRS[@]}"; do
     rsync -a --delete "$src/" "$dst/"
   elif [[ -f "$src" ]]; then
     mkdir -p "$(dirname "$dst")"
+    if [[ -d "$dst" ]]; then
+      echo "  note: removing stale directory at $dst"
+      rm -rf "$dst"
+    fi
     rsync -a "$src" "$dst"
   else
     echo "skip: $src (not a regular file or dir)"
