@@ -1,0 +1,13 @@
+# Spicetify generated/binaries (regenerate with `spicetify apply`; token files live here)
+.spicetify/spicetify
+.spicetify/globals.d.ts
+.spicetify/css-map.json
+.spicetify/jsHelper/
+.spicetify/*.state
+.spicetify/*.token
+.spicetify/*.exe
+
+# Nothing sensitive should ever end up in the repo, but just in case:
+*~
+*.swp
+*.state

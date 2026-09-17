@@ -1,8 +1,8 @@
 # vim:fileencoding=utf-8:foldmethod=marker
 
 # BEGIN_KITTY_THEME
-# BWZS
-include BWZS.conf
+# Cherry
+include current-theme.conf
 # END_KITTY_THEME
 
 #: Fonts {{{
@@ -1139,7 +1139,7 @@ include BWZS.conf
 #: Window layout {{{
 
 remember_window_size no 
-initial_window_width  1300
+initial_window_width  1170
 initial_window_height 700
 
 #: If enabled, the OS Window size will be remembered so that new
