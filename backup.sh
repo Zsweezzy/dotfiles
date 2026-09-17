@@ -41,7 +41,6 @@ PAIRS=(
   "$HOME/.local/share/color-schemes|.local/share/color-schemes"
   "$HOME/.local/share/aurorae|.local/share/aurorae"
   "$HOME/.local/share/wallpapers|.local/share/wallpapers"
-  "$HOME/CenteredStartMenu|CenteredStartMenu"
 
   # KDE config (theme/layout only — no activity history, wallets, or session state)
   "$HOME/.config/kdeglobals|.config/kdeglobals"
