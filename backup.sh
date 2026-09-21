@@ -28,10 +28,13 @@ PAIRS=(
   # Editors / apps
   "$HOME/.config/nvim|.config/nvim"
 
-  # Spicetify (user content only — Themes, Extensions, CustomApps)
+  # Spicetify (user content only — Themes, Extensions, CustomApps,
+  # plus the spicetify-cli config & active theme)
   "$HOME/.spicetify/Themes|.spicetify/Themes"
   "$HOME/.spicetify/Extensions|.spicetify/Extensions"
   "$HOME/.spicetify/CustomApps|.spicetify/CustomApps"
+  "$HOME/.config/spicetify/Themes|.config/spicetify/Themes"
+  "$HOME/.config/spicetify/config-xpui.ini|.config/spicetify/config-xpui.ini"
 
   # KDE Plasma theme
   "$HOME/.local/share/plasma/desktoptheme|.local/share/plasma/desktoptheme"
