@@ -1,15 +1,15 @@
 # Tweaks
 
 One-off system tweaks. Each tweak lives in its own **named folder** under
-`tweaks/`; inside it, the file structure mirrors your home-directory
-layout (same convention as the theme folders, e.g. `tweaks/Arch update/
-.local/share/applications/…` → `~/.local/share/applications/…`).
-To apply a tweak, drag the file from here onto the matching path on your
+`tweaks/` and holds the file(s) to drop onto your PC — the tweak name
+tells you the app, the file inside lands at the matching home path, e.g.
+`tweaks/Arch update/arch-update.desktop` → `~/.local/share/applications/arch-update.desktop`.
+To apply a tweak, copy the file from here onto the matching path on your
 PC.
 
 ## Arch update → kitty
 
-- **Repo path:** `tweaks/Arch update/.local/share/applications/arch-update.desktop`
+- **Repo path:** `tweaks/Arch update/arch-update.desktop`
 - **Apply to:** `~/.local/share/applications/arch-update.desktop`
 - **What it does:** makes Cachy-Update run inside kitty instead of
   Konsole. The system file `/usr/share/applications/arch-update.desktop`
@@ -30,7 +30,7 @@ PC.
 
 ## Terminal browser darkmode
 
-- **Repo path:** `tweaks/Terminal browser darkmode/.local/bin/reapply-darkmode`
+- **Repo path:** `tweaks/Terminal browser darkmode/reapply-darkmode`
 - **Apply to:** `~/.local/bin/reapply-darkmode` (keep it executable)
 - **What it does:** re-applies a patch to terminal-browser
   (`zenbu-labs`, installed under `~/.local/share/terminal-browser/app/`)
