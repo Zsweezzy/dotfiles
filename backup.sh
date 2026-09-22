@@ -28,6 +28,9 @@ PAIRS=(
   # Editors / apps
   "$HOME/.config/nvim|.config/nvim"
 
+  # mpv (Flatpak) — YouTube-style OSC + Tokyo Night Moon colors
+  "$HOME/.var/app/io.mpv.Mpv/config/mpv|.var/app/io.mpv.Mpv/config/mpv"
+
   # Spicetify (user content only — Themes, Extensions, CustomApps,
   # plus the spicetify-cli config & active theme)
   "$HOME/.spicetify/Themes|.spicetify/Themes"
