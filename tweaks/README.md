@@ -5,6 +5,30 @@ One-off system tweaks, stored mirroring your home-directory layout
 onto the matching path on your PC — the folder structure below `tweaks/`
 corresponds 1:1 to your home directory.
 
+## reapply-darkmode → terminal-browser
+
+- **Repo path:** `tweaks/.local/bin/reapply-darkmode`
+- **Apply to:** `~/.local/bin/reapply-darkmode` (keep it executable)
+- **What it does:** re-applies a patch to terminal-browser
+  (`zenbu-labs`, installed under `~/.local/share/terminal-browser/app/`)
+  that makes every site render in dark mode. It patches
+  `browser/dist/main.js` so `emulateColorScheme()` always sends
+  `prefers-color-scheme: dark` **and** enables Chromium's
+  `Emulation.setAutoDarkModeOverride` (dark-capable sites use their dark
+  theme; light-only sites get auto-darkened). The bundled `main.js` is
+  overwritten on every `terminal-browser upgrade`, hence the script.
+
+### Notes
+
+- Run `reapply-darkmode` **after** each `terminal-browser upgrade`:
+  ```bash
+  terminal-browser upgrade
+  reapply-darkmode
+  ```
+- Idempotent — safe to run repeatedly (prints *"already patched"* when done).
+- To undo, reinstall/re-upgrade terminal-browser and skip the reapply, or
+  edit the patched `emulateColorScheme()` block back to the original.
+
 ## cachy-update → kitty
 
 - **Repo path:** `tweaks/.local/share/applications/arch-update.desktop`
