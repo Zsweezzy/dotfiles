@@ -2,16 +2,16 @@
  <g id="pressed-center" style="enable-background:new">
   <rect x="46" width="22" height="22" style="fill:#000000;opacity:.00100002"/>
   <circle cx="57" cy="11" r="11" style="fill:#ffffff;opacity:.28000004"/>
-  <path d="m53 7v8h8v-8zm2 2h4v4h-4v-1z" style="fill-rule:evenodd;fill:#aaaaac"/>
+  <path d="m53 7v8h8v-8zm2 2h4v4h-4v-1z" style="fill-rule:evenodd;fill:#c8d3f5"/>
  </g>
  <g id="hover-center" style="enable-background:new">
   <rect x="23" width="22" height="22" style="fill:#000000;opacity:.00100002"/>
   <circle cx="34" cy="11" r="11" style="fill:#ffffff;opacity:.18000004"/>
-  <path d="m30 7v8h8v-8zm2 2h4v4h-4v-1z" style="fill-rule:evenodd;fill:#aaaaac"/>
+  <path d="m30 7v8h8v-8zm2 2h4v4h-4v-1z" style="fill-rule:evenodd;fill:#c8d3f5"/>
  </g>
  <g id="active-center" style="enable-background:new">
   <rect width="22" height="22" style="fill:#000000;opacity:.00100002"/>
-  <path d="m7 7v8h8v-8zm2 2h4v4h-4v-1z" style="fill-rule:evenodd;fill:#aaaaac"/>
+  <path d="m7 7v8h8v-8zm2 2h4v4h-4v-1z" style="fill-rule:evenodd;fill:#c8d3f5"/>
  </g>
  <g id="inactive-center" transform="translate(69)" style="enable-background:new">
   <rect width="22" height="22" style="fill:#000000;opacity:.00100002"/>
